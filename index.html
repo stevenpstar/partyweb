@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div id='connect-to'>
+    <label class='label' for="name">Name</label>
+    <input id="name" type="text" />
+    <label class='label' for="input">Room Code</label>
+    <input id="input" type="text" />
+    <div class='flex-row-end'>
+      <button id="submit">Join Room</button>
+    </div>
+    <pre id="output"></pre>
+  </div>
+
+  <div id='waiting'></div>
+    
+  <div id='take_picture' class='hidden flex-col-between'>
+  <div id='viddy' class='flex-col-between'>
+    <video id="video" autoplay></video>
+    <button id='snapshot'>Snap</button>
+  </div>
+  
+    
+  <div id='snappy' class='flex-row-center hidden'>
+    <div class='flex-col-between'>
+      <img id="img" src='' />
+      <canvas id="canvas"></canvas>
+      <button id="screenshotbutton">Send</button>
+      <button id="cancel">Cancel</button>
+    </div>
+  </div>
+  
+  </div>
+
+  <div id='crimeprompt' class='hidden flex-col-between'>
+    <input type='text' id='crime'></input>
+    <img src='' id='criminalimage' />
+    <button id="promptbutton">Send</button>
+  </div>
+
+  <script src="script.js"></script>
+  </body>
+
+</html>
