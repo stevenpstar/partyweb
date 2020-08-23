@@ -44,7 +44,7 @@ button.addEventListener('click', function() {
         //document.getElementById('take_picture').classList.remove('hidden');
         document.getElementById('waiting').classList.remove('hidden');
         playername = document.getElementById('name').value.toUpperCase();
-        socket = new WebSocket("ws://bigbadpartygame.herokuapp.com:80/cws/" + code.toString() + "/" + document.getElementById("name").value.toUpperCase())
+        socket = new WebSocket("wss://bigbadpartygame.herokuapp.com:80/cws/" + code.toString() + "/" + document.getElementById("name").value.toUpperCase())
         socket.onopen = socketOpened;
         socket.onmessage = function(e) {
           messageReceived(e);
